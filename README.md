@@ -96,9 +96,9 @@ func (c *SAPAPICaller) AsyncGetDebitMemoRequest(debitMemoRequest, debitMemoReque
 }
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP デビットメモ依頼 の ヘッダデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"DebitMemoRequest" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"DebitMemoRequest" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -116,23 +116,23 @@ func (c *SAPAPICaller) AsyncGetDebitMemoRequest(debitMemoRequest, debitMemoReque
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "10100001",
-			"CreationDate": "/Date(1480982400000)/",
+			"CreationDate": "2016-12-06T09:00:00+09:00",
 			"LastChangeDate": "",
-			"LastChangeDateTime": "/Date(1481036013881+0000)/",
+			"LastChangeDateTime": "",
 			"PurchaseOrderByCustomer": "PO 4500000467",
 			"CustomerPurchaseOrderType": "",
-			"CustomerPurchaseOrderDate": "/Date(1480464000000)/",
-			"DebitMemoRequestDate": "/Date(1480982400000)/",
+			"CustomerPurchaseOrderDate": "2016-11-30T09:00:00+09:00",
+			"DebitMemoRequestDate": "2016-12-06T09:00:00+09:00",
 			"TotalNetAmount": "560.00",
 			"TransactionCurrency": "EUR",
 			"SDDocumentReason": "",
-			"PricingDate": "/Date(1480982400000)/",
+			"PricingDate": "2016-12-06T09:00:00+09:00",
 			"CustomerTaxClassification1": "",
 			"HeaderBillingBlockReason": "",
 			"IncotermsClassification": "EXW",
 			"CustomerPaymentTerms": "0004",
 			"PaymentMethod": "",
-			"BillingDocumentDate": "/Date(1480982400000)/",
+			"BillingDocumentDate": "2016-12-06T09:00:00+09:00",
 			"ReferenceSDDocument": "23212",
 			"ReferenceSDDocumentCategory": "C",
 			"OverallSDProcessStatus": "A",
@@ -143,8 +143,9 @@ func (c *SAPAPICaller) AsyncGetDebitMemoRequest(debitMemoRequest, debitMemoReque
 			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_DEBIT_MEMO_REQUEST_SRV/A_DebitMemoRequest('70000000')/to_Item"
 		}
 	],
-	"time": "2022-01-08T16:46:02.200391+09:00"
+	"time": "2022-01-27T23:13:17+09:00"
 }
+
 ```
 
 

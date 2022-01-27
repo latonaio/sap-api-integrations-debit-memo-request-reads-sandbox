@@ -12,7 +12,7 @@
 			"PurchaseOrderByCustomer": "PO 4500000467",
 			"Material": "T001",
 			"MaterialByCustomer": "",
-			"PricingDate": "/Date(1480982400000)/",
+			"PricingDate": "2016-12-06T09:00:00+09:00",
 			"RequestedQuantity": "7.000",
 			"RequestedQuantityUnit": "H",
 			"ItemGrossWeight": "0.000",
@@ -40,5 +40,5 @@
 			"to_PricingElement": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_DEBIT_MEMO_REQUEST_SRV/A_DebitMemoRequestItem(DebitMemoRequest='70000000',DebitMemoRequestItem='1')/to_PricingElement"
 		}
 	],
-	"time": "2022-01-08T16:55:44.996171+09:00"
+	"time": "2022-01-27T23:12:38+09:00"
 }

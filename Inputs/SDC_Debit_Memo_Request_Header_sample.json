@@ -100,7 +100,7 @@
 				"ConditionScaleBasisValue": "",
 				"ConditionScaleBasisUnit": "",
 				"ConditionScaleBasisCurrency": "",
-				"ConditionIsManuallyChanged": ""
+				"ConditionIsManuallyChanged": false
 			}
 		}
 	},

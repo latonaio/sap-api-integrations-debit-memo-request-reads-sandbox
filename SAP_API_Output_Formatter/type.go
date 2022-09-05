@@ -1,50 +1,50 @@
 package sap_api_output_formatter
 
-type CreditMemoRequest struct {
-	ConnectionKey        string `json:"connection_key"`
-	Result               bool   `json:"result"`
-	RedisKey             string `json:"redis_key"`
-	Filepath             string `json:"filepath"`
-	APISchema            string `json:"api_schema"`
-	CreditMemoRequest    string `json:"credit_memo_request"`
-	Deleted              bool   `json:"deleted"`
-}    
-    
+type DebitMemoRequest struct {
+	ConnectionKey    string `json:"connection_key"`
+	Result           bool   `json:"result"`
+	RedisKey         string `json:"redis_key"`
+	Filepath         string `json:"filepath"`
+	APISchema        string `json:"api_schema"`
+	DebitMemoRequest string `json:"debit_memo_request"`
+	Deleted          bool   `json:"deleted"`
+}
+
 type Header struct {
-	DebitMemoRequest              string      `json:"DebitMemoRequest"`
-	DebitMemoRequestType          string      `json:"DebitMemoRequestType"`
-	SalesOrganization             string      `json:"SalesOrganization"`
-	DistributionChannel           string      `json:"DistributionChannel"`
-	OrganizationDivision          string      `json:"OrganizationDivision"`
-	SalesGroup                    string      `json:"SalesGroup"`
-	SalesOffice                   string      `json:"SalesOffice"`
-	SalesDistrict                 string      `json:"SalesDistrict"`
-	SoldToParty                   string      `json:"SoldToParty"`
-	CreationDate                  string      `json:"CreationDate"`
-	LastChangeDate                string      `json:"LastChangeDate"`
-	LastChangeDateTime            string      `json:"LastChangeDateTime"`
-	PurchaseOrderByCustomer       string      `json:"PurchaseOrderByCustomer"`
-	CustomerPurchaseOrderType     string      `json:"CustomerPurchaseOrderType"`
-	CustomerPurchaseOrderDate     string      `json:"CustomerPurchaseOrderDate"`
-	DebitMemoRequestDate          string      `json:"DebitMemoRequestDate"`
-	TotalNetAmount                string      `json:"TotalNetAmount"`
-	TransactionCurrency           string      `json:"TransactionCurrency"`
-	SDDocumentReason              string      `json:"SDDocumentReason"`
-	PricingDate                   string      `json:"PricingDate"`
-	CustomerTaxClassification1    string      `json:"CustomerTaxClassification1"`
-	HeaderBillingBlockReason      string      `json:"HeaderBillingBlockReason"`
-	IncotermsClassification       string      `json:"IncotermsClassification"`
-	CustomerPaymentTerms          string      `json:"CustomerPaymentTerms"`
-	PaymentMethod                 string      `json:"PaymentMethod"`
-	BillingDocumentDate           string      `json:"BillingDocumentDate"`
-	ReferenceSDDocument           string      `json:"ReferenceSDDocument"`
-	ReferenceSDDocumentCategory   string      `json:"ReferenceSDDocumentCategory"`
-	OverallSDProcessStatus        string      `json:"OverallSDProcessStatus"`
-	TotalCreditCheckStatus        string      `json:"TotalCreditCheckStatus"`
-	OverallSDDocumentRejectionSts string      `json:"OverallSDDocumentRejectionSts"`
-	OverallOrdReltdBillgStatus    string      `json:"OverallOrdReltdBillgStatus"`
-    ToHeaderPartner               string      `json:"to_Partner"`
-    ToItem                        string      `json:"to_Item"`	
+	DebitMemoRequest              string `json:"DebitMemoRequest"`
+	DebitMemoRequestType          string `json:"DebitMemoRequestType"`
+	SalesOrganization             string `json:"SalesOrganization"`
+	DistributionChannel           string `json:"DistributionChannel"`
+	OrganizationDivision          string `json:"OrganizationDivision"`
+	SalesGroup                    string `json:"SalesGroup"`
+	SalesOffice                   string `json:"SalesOffice"`
+	SalesDistrict                 string `json:"SalesDistrict"`
+	SoldToParty                   string `json:"SoldToParty"`
+	CreationDate                  string `json:"CreationDate"`
+	LastChangeDate                string `json:"LastChangeDate"`
+	LastChangeDateTime            string `json:"LastChangeDateTime"`
+	PurchaseOrderByCustomer       string `json:"PurchaseOrderByCustomer"`
+	CustomerPurchaseOrderType     string `json:"CustomerPurchaseOrderType"`
+	CustomerPurchaseOrderDate     string `json:"CustomerPurchaseOrderDate"`
+	DebitMemoRequestDate          string `json:"DebitMemoRequestDate"`
+	TotalNetAmount                string `json:"TotalNetAmount"`
+	TransactionCurrency           string `json:"TransactionCurrency"`
+	SDDocumentReason              string `json:"SDDocumentReason"`
+	PricingDate                   string `json:"PricingDate"`
+	CustomerTaxClassification1    string `json:"CustomerTaxClassification1"`
+	HeaderBillingBlockReason      string `json:"HeaderBillingBlockReason"`
+	IncotermsClassification       string `json:"IncotermsClassification"`
+	CustomerPaymentTerms          string `json:"CustomerPaymentTerms"`
+	PaymentMethod                 string `json:"PaymentMethod"`
+	BillingDocumentDate           string `json:"BillingDocumentDate"`
+	ReferenceSDDocument           string `json:"ReferenceSDDocument"`
+	ReferenceSDDocumentCategory   string `json:"ReferenceSDDocumentCategory"`
+	OverallSDProcessStatus        string `json:"OverallSDProcessStatus"`
+	TotalCreditCheckStatus        string `json:"TotalCreditCheckStatus"`
+	OverallSDDocumentRejectionSts string `json:"OverallSDDocumentRejectionSts"`
+	OverallOrdReltdBillgStatus    string `json:"OverallOrdReltdBillgStatus"`
+	ToHeaderPartner               string `json:"to_Partner"`
+	ToItem                        string `json:"to_Item"`
 }
 
 type Item struct {
@@ -85,10 +85,10 @@ type Item struct {
 }
 
 type ToHeaderPartner struct {
-	DebitMemoRequest    string `json:"DebitMemoRequest"`
-	PartnerFunction     string `json:"PartnerFunction"`
-	Customer            string `json:"Customer"`
-	Supplier            string `json:"Supplier"`
+	DebitMemoRequest string `json:"DebitMemoRequest"`
+	PartnerFunction  string `json:"PartnerFunction"`
+	Customer         string `json:"Customer"`
+	Supplier         string `json:"Supplier"`
 }
 
 type ToItem struct {
